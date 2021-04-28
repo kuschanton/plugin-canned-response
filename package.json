@@ -1,18 +1,17 @@
 {
-  "name": "plugin-sample",
+  "name": "plugin-canned-response",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "postinstall": "flex-plugin pre-script-check",
-    "start": "twilio flex:plugins:start"
+    "start": "twilio flex:plugins:start",
+    "deploy": "twilio flex:plugins:deploy --major --changelog 'Changes1' --description 'Description1'"
   },
   "dependencies": {
     "react": "16.5.2",
     "react-dom": "16.5.2",
     "typescript": "^3.9.7",
-    "flex-plugin-scripts": "4.7.5-beta.0",
-    "@emotion/styled": "^10.0.7",
-    "@emotion/core": "^10.0.7"
+    "flex-plugin-scripts": "4.7.5-beta.0"
   },
   "devDependencies": {
     "@twilio/flex-ui": "^1",

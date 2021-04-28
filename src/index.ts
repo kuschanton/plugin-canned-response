@@ -1,4 +1,4 @@
 import * as FlexPlugin from 'flex-plugin';
-import ChatMessageTranslator from "./ChatMessageTranslator";
+import AgentAutoresponsePlugin from "./cannedResponse/AgentAutoresponsePlugin";
 
-FlexPlugin.loadPlugin(ChatMessageTranslator);
+FlexPlugin.loadPlugin(AgentAutoresponsePlugin);
