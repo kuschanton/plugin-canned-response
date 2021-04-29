@@ -1,11 +1,12 @@
 {
   "name": "plugin-canned-response",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
     "postinstall": "flex-plugin pre-script-check",
     "start": "twilio flex:plugins:start",
-    "deploy": "twilio flex:plugins:deploy --major --changelog 'Changes1' --description 'Description1'"
+    "deploy": "twilio flex:plugins:deploy --major --changelog 'Changes1' --description 'Description1'",
+    "release": "twilio flex:plugins:release --plugin $npm_package_name@$npm_package_version --name 'Release from nmp script' --description 'The description of this Flex Plugin Configuration'"
   },
   "dependencies": {
     "react": "16.5.2",
